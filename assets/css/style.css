@@ -11,6 +11,40 @@
 }  */
 /* momentaneo */
 
+/* inicio en sitio para tienda */
+button.swal2-confirm.swal2-styled {
+  background-color: #701030!important;
+  font-family: "Spectral", serif; 
+}
+
+/* Estilos personalizados para Toastify */
+.cartel-agregar {
+  transform: translateX(-50%) translateY(-20px); /* Centra horizontalmente y desplaza un poco hacia arriba */
+  left: 50% !important; /* Centra horizontalmente */
+  bottom: 50px !important; /* Ajusta la distancia desde el borde inferior */
+  max-width: 90%; /* Asegura que el toast no se expanda demasiado en pantallas más pequeñas */
+  margin: 0 auto; /* Asegura que el margen se aplique correctamente */
+  padding: 10px 15px; /* Ajusta el padding para reducir el espacio */
+  box-sizing: border-box; /* Asegura que el padding esté dentro del tamaño del contenedor */
+}
+
+.cartel-agregar .toastify-content {
+  margin: 0 !important; /* Elimina márgenes adicionales */
+  padding: 0 !important; /* Elimina padding adicional */
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+}
+
+.cartel-agregar .toastify-close {
+  position: absolute;
+  top: 59px; /* Ajusta según sea necesario */
+  right: 80px; /* Ajusta según sea necesario */
+}
+
+
+
+
+/*  */
 body {
   font-family: "Spectral", serif;
   font-size: 1rem;
