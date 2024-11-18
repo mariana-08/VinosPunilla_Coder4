@@ -17,30 +17,6 @@ button.swal2-confirm.swal2-styled {
   font-family: "Spectral", serif; 
 }
 
-/* Estilos personalizados para Toastify */
-.cartel-agregar {
-  transform: translateX(-50%) translateY(-20px); /* Centra horizontalmente y desplaza un poco hacia arriba */
-  left: 50% !important; /* Centra horizontalmente */
-  bottom: 50px !important; /* Ajusta la distancia desde el borde inferior */
-  max-width: 90%; /* Asegura que el toast no se expanda demasiado en pantallas más pequeñas */
-  margin: 0 auto; /* Asegura que el margen se aplique correctamente */
-  padding: 10px 15px; /* Ajusta el padding para reducir el espacio */
-  box-sizing: border-box; /* Asegura que el padding esté dentro del tamaño del contenedor */
-}
-
-.cartel-agregar .toastify-content {
-  margin: 0 !important; /* Elimina márgenes adicionales */
-  padding: 0 !important; /* Elimina padding adicional */
-  display: flex;
-  align-items: center; /* Centra verticalmente el contenido */
-}
-
-.cartel-agregar .toastify-close {
-  position: absolute;
-  top: 59px; /* Ajusta según sea necesario */
-  right: 80px; /* Ajusta según sea necesario */
-}
-
 
 
 
@@ -681,6 +657,7 @@ section {
 section#hero2 {
   padding: 0;
 }
+
 #header.header-carrito {
   background: transparent;
   /* background: rgba(55, 64, 85, 0.9); */
@@ -829,6 +806,21 @@ button.btn.btn-danger.btn-sm {
   border:1px solid #701030;
 }
 
+.resumen-compra {
+  height: 300px; /* Altura fija que puedes ajustar según tus necesidades */
+  position: sticky;
+  top: 0;
+  background-color: #f8f9fa; /* Fondo para diferenciar visualmente */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra opcional para un mejor diseño */
+}
+
+  
+
+
+
+
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -868,7 +860,7 @@ button.btn.btn-danger.btn-sm {
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #ed3c0d;
+  background: #2e0714;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -881,7 +873,7 @@ button.btn.btn-danger.btn-sm {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #9e0e3e;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -901,7 +893,7 @@ button.btn.btn-danger.btn-sm {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #9e0e3e;
   border-top-color: #eee;
   animation: animate-loading 1s linear infinite;
 }

@@ -16,41 +16,47 @@ class Tienda {
             this.filtrarPorBodega(event.target.value);
         });
     }
-   
+
     // Método para iniciar la tienda
     iniciarTienda() {
-        Swal.fire({
-            title: 'Bienvenidos a Vinos Punilla',
-            text: 'Para visitar nuestro sitio web debes ser mayor de 18 años. ',
-            input: 'text',
-            inputPlaceholder: 'Ingresa tu año de nacimiento',
-            showCancelButton: true,
-            confirmButtonText: 'Continuar',
-            cancelButtonText: 'Cancelar',
-            inputValidator: (value) => {
-                if (!value) {
-                    return 'Debes ingresar un año de nacimiento';
+        // Verificar si ya se ha confirmado que el usuario es mayor de edad
+        if (!localStorage.getItem('mayorDeEdad')) {
+            Swal.fire({
+                title: 'Bienvenidos a Vinos Punilla',
+                text: 'Para visitar nuestro sitio web debes ser mayor de 18 años.',
+                input: 'text',
+                inputPlaceholder: 'Ingresa tu año de nacimiento',
+                showCancelButton: true,
+                confirmButtonText: 'Continuar',
+                cancelButtonText: 'Cancelar',
+                inputValidator: (value) => {
+                    if (!value) {
+                        return 'Debes ingresar un año de nacimiento';
+                    }
                 }
-            }
-        }).then((result) => {
-            if (result.isConfirmed) {
-                const anioNacimientoIng = result.value;
-                if (this.validarEdad(anioNacimientoIng)) {
-                    Swal.fire({
-                        title: '¡Bien!',
-                        text: 'Sos mayor de edad. Podrás visitar la página y comprar vinos.',                       
-                    }).then(() => {
-                        this.mostrarVinos();
-                    });
-                } else {
-                    Swal.fire({
-                        title: 'Acceso denegado',
-                        text: 'Debes ser mayor de 18 años para ingresar a Vinos Punilla. Recarga la página.',
-                        icon: 'error'
-                    });
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    const anioNacimientoIng = result.value;
+                    if (this.validarEdad(anioNacimientoIng)) {
+                        Swal.fire({
+                            title: '¡Bien!',
+                            text: 'Sos mayor de edad. Podrás visitar la página y comprar vinos.',
+                        }).then(() => {
+                            localStorage.setItem('mayorDeEdad', 'true');
+                            this.mostrarVinos();
+                        });
+                    } else {
+                        Swal.fire({
+                            title: 'Acceso denegado',
+                            text: 'Debes ser mayor de 18 años para ingresar a Vinos Punilla. Recarga la página.',
+                            icon: 'error'
+                        });
+                    }
                 }
-            }
-        });
+            });
+        } else {
+            this.mostrarVinos();
+        }
     }
 
     // Método para validar la edad del usuario
@@ -116,7 +122,7 @@ class Tienda {
                 gravity: 'bottom', // `top` o `bottom`
                 position: 'right', // `left`, `center` o `right`
                 backgroundColor: '#374055',
-                stopOnFocus: true,              
+                stopOnFocus: true,
             }).showToast();
 
             this.actualizarContadorCarrito();
@@ -141,8 +147,8 @@ class Tienda {
     }
 
     // Método para filtrar los vinos por precio
-    filtrarPrecios(ascendente) {        
-        let coleccion = this.vinosFiltrados.length >0 ? this.vinosFiltrados : this.vinos;
+    filtrarPrecios(ascendente) {
+        let coleccion = this.vinosFiltrados.length > 0 ? this.vinosFiltrados : this.vinos;
         const preciosOrdenados = coleccion.sort((a, b) => {
             return ascendente ? a.precio - b.precio : b.precio - a.precio;
         });
@@ -154,7 +160,7 @@ class Tienda {
         if (bodega === "") {
             this.vinosFiltrados = [];
             this.mostrarVinos(this.vinos);
-        } else { 
+        } else {
             this.vinosFiltrados = this.vinos.filter(vino => vino.bodega === bodega);
 
             let orden = document.getElementById('ordenar-precios').value;
@@ -168,3 +174,25 @@ const tienda = new Tienda(vinos);
 document.addEventListener('DOMContentLoaded', () => {
     tienda.iniciarTienda();
 });
+
+//en tienda14 tengo la parte que recuerde que si el usuario es mayor de edad con local storage y no le vuelve a pedir la edad
+//tambien tengo la parte de ordenar los vinos por precio y filtrar por bodega
+//y tambien tengo la parte de agregar al carrito con toastify
+//y tambien tengo la parte de contar los productos en el carrito
+//y tambien tengo la parte de mostrar los vinos en la pagina
+//y tambien tengo la parte de validar la edad del usuario
+//y tambien tengo la parte de agregar eventos a los botones
+//y tambien tengo la parte de agregar al carrito
+//y tambien tengo la parte de actualizar el contador del carrito
+//y tambien tengo la parte de ordenar los vinos por precio
+//y tambien tengo la parte de filtrar los vinos por precio
+//y tambien tengo la parte de filtrar los vinos por bodega
+//y tambien tengo la parte de mostrar los vinos en la pagina
+//y tambien tengo la parte de iniciar la tienda
+//y tambien tengo la parte de validar la edad del usuario
+//y tambien tengo la parte de mostrar los vinos en la pagina
+//y tambien tengo la parte de agregar eventos a los botones
+//y tambien tengo la parte de agregar al carrito
+//y tambien tengo la parte de actualizar el contador del carrito
+//y tambien tengo la parte de ordenar los vinos por precio
+//y tambien tengo la parte de filtrar los vinos por precio
