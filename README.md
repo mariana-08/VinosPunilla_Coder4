@@ -1,0 +1,5 @@
+Es un proyecto comenzado en 2022 para Vinos Punilla en Córdoba. 
+Lo realice tomando cosas de una plantilla. Pero hoy en 2024 lo tome como proyecto para mejorarlo y armar con JavaScript el carrito. 
+Hoy se compone de un index.html y carrito.html donde esta la vinculación con vinos.js, tienda.js y carrito.js eso hace funcionar la parte de seleccion del vino, por bodega y se filtra por precio. Tiene un CSS armado por completo por mi, pensando en el diseño de imagen que realice para Vinos Punilla. No solo trabaje con el sitio sino que hace 2 años cuando comenzo este proyecto le arme el logo y el branding pensando en un desarrollo de la distribuidora.
+Pienso seguir trabajando en este proyecto mejorandolo, ya que el formulario funciona, se guarda en base de datos y envia al cliente una copia al email de lo que completo en el form pero eso lo hice con ayuda de gente que trabaja con migo en el area de Desarrollo, donde ya tenian una idea de programación. 
+Es por eso que si no llego ahora lo hare a futuro  para aprender y  mejorar mis habilidades y conocimientos. 
