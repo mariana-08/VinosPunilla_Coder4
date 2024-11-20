@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Función para mostrar los productos en el carrito
     function mostrarCarrito() {
-        carritoItems.innerHTML = '';
+        carritoItems.innerHTML = ''; // Limpiar el contenedor del carrito.
         let total = 0;
 
         carrito.forEach(vino => {
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             decrementBtn.classList.add('btn', 'btn-danger', 'btn-sm', 'me-2');
             decrementBtn.addEventListener('click', () => {
                 Swal.fire({
-                    title: 'Estas por eliminar un vino en la lista de compra',
+                    title: 'Estas por eliminar un vino',
                     text: '¿Está seguro de eliminar este vino?',
                     icon: 'question',
                     showCancelButton: true,
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             incrementBtn.classList.add('btn', 'btn-success', 'btn-sm');
             incrementBtn.addEventListener('click', () => {
                 Swal.fire({
-                    title: 'Sumaste un vino en la lista de compra',
+                    title: 'Sumaste un vino.',
                     icon: 'info',
                     timer: 1500,
                     showConfirmButton: false
@@ -136,37 +136,23 @@ document.addEventListener('DOMContentLoaded', () => {
         listaVinos += `<p><strong>Total: $${sumaCarrito}</strong></p>`;
 
         Swal.fire({
-            title: 'Lista de vinos en el carrito:',
-            html: `${listaVinos}<p>¡Gracias por tu compra!</p>`,
+            title: 'Compraste los vinos:',
+            html: `${listaVinos}<h4>¡Gracias por tu compra!</h4>`,
             icon: 'success'
         }).then(() => {
             localStorage.removeItem('carrito');
             carritoItems.innerHTML = '';
             document.querySelector('.suma-carrito').textContent = 'Total: $0';
             carrito.length = 0;
-            // Redirigir a la página de inicio después de 3 segundos
+            // Redirigir a la página de inicio después de 2 segundos
             setTimeout(() => {
-                window.location.href = 'index.html'; // Cambia 'index.html' por la URL de tu página de inicio
-            }, 3000);
+                window.location.href = 'index.html'; 
+            }, 2000);
         });
     }
 
     // Mostrar el carrito
     mostrarCarrito();
-    finalizarCompraBtn.addEventListener('click', finalizarCompra);
+   finalizarCompraBtn.addEventListener('click', finalizarCompra);
 
-    // Evento para el botón del carrito en el menú
-    menuCarritoBtn.addEventListener('click', (event) => {
-        event.preventDefault();
-        if (carrito.length === 0) {
-            Swal.fire({
-                title: 'Tu carrito está vacío',
-                text: 'No tienes vinos en tu carrito.',
-                icon: 'info'
-            });
-        } else {
-            // Redirigir a la página del carrito si hay productos en el carrito
-            window.location.href = 'carrito.html';
-        }
-    });
 });
