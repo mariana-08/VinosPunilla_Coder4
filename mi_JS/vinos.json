@@ -1,5 +1,5 @@
-{
- "vinos": [ 
+
+[ 
     
     {
         "id": 1,
@@ -173,8 +173,4 @@
         "imagen": "assets/img/vinos/Matilde/Ladron.jpg"
     }
 
-
 ]
-
-
-}
