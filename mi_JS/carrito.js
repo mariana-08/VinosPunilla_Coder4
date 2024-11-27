@@ -144,6 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
             carritoItems.innerHTML = '';
             document.querySelector('.suma-carrito').textContent = 'Total: $0';
             carrito.length = 0;
+            
             // Redirigir a la página de inicio después de 2 segundos
             setTimeout(() => {
                 window.location.href = 'index.html'; 
