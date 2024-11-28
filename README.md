@@ -1,5 +1,17 @@
-Es un proyecto comenzado en 2022 para Vinos Punilla en Córdoba. 
-Lo realice tomando cosas de una plantilla. Pero hoy en 2024 lo tome como proyecto para mejorarlo y armar con JavaScript el carrito. 
-Hoy se compone de un index.html y carrito.html donde esta la vinculación con vinos.js, tienda.js y carrito.js eso hace funcionar la parte de seleccion del vino, por bodega y se filtra por precio. Tiene un CSS armado por completo por mi, pensando en el diseño de imagen que realice para Vinos Punilla. No solo trabaje con el sitio sino que hace 2 años cuando comenzo este proyecto le arme el logo y el branding pensando en un desarrollo de la distribuidora.
-Pienso seguir trabajando en este proyecto mejorandolo, ya que el formulario funciona, se guarda en base de datos y envia al cliente una copia al email de lo que completo en el form pero eso lo hice con ayuda de gente que trabaja con migo en el area de Desarrollo, donde ya tenian una idea de programación. 
-Es por eso que si no llego ahora lo hare a futuro  para aprender y  mejorar mis habilidades y conocimientos. 
+Este proyecto comenzó en 2022 como una colaboración con Vinos Punilla, una distribuidora de vinos en Córdoba, Argentina. En ese entonces, desarrollé el sitio web utilizando una plantilla como base, y también diseñé el logo y el branding completo para la distribuidora, pensando en su imagen y desarrollo futuro.
+
+En 2024, retomé este proyecto como un desafío personal para mejorarlo y ampliar sus funcionalidades. Actualmente, el sitio cuenta con:
+Páginas principales:
+index.html (modificado para utilizar js)
+carrito.html (Página de carrito de compras).
+
+Scripts funcionales hechos por mi (mi_JS):
+vinos.js: Gestiona la información de los productos junto con vinos.json
+tienda.js: Permite seleccionar vinos según bodega y filtrar por precio.
+carrito.js: Controla las funciones del carrito de compras.
+
+El sitio tiene un diseño visual personalizado, con un CSS completamente desarrollado por mí, basado en la identidad de marca creada para Vinos Punilla. 
+Además, se incluyó un formulario funcional que guarda la información en una base de datos y envía una copia al cliente por correo electrónico. Este desarrollo lo realicé con la ayuda de mi compañero de  trabajo del área de Desarrollo, quien ya tenían experiencia en programación.
+
+Mi objetivo es seguir trabajando en este proyecto para mejorar sus funcionalidades y perfeccionar mis habilidades técnicas. Aunque el progreso es continuo, planeo implementar mejoras futuras para seguir aprendiendo y creciendo profesionalmente.
+
