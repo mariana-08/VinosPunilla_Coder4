@@ -37,8 +37,8 @@ class Tienda {
                 const anioNacimientoIng = result.value;
                 if (this.validarEdad(anioNacimientoIng)) {
                     Swal.fire({
-                        title: '¡Bien!',
-                        text: 'Sos mayor de edad. Podrás visitar la página y comprar vinos.',                       
+                        title: '¡Bien!, sos mayor de edad',
+                        text: 'Podrás visitar la página y comprar vinos.',                       
                     }).then(() => {
                         this.mostrarVinos();
                     });
