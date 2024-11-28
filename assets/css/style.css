@@ -4,21 +4,12 @@
  #701030;
  #780A2F;
 --------------------------------------------------------------*/
-/* momentaneo */
-/* #header{
-  background: #b5afaf;
-  padding: 15px 0;
-}  */
-/* momentaneo */
 
 /* inicio en sitio para tienda */
 button.swal2-confirm.swal2-styled {
   background-color: #701030!important;
   font-family: "Spectral", serif; 
 }
-
-
-
 
 /*  */
 body {
@@ -47,8 +38,7 @@ h5 {
   color: #fff; 
   padding-bottom: 15px;
 }
-p {
-  /* font-size: 18px; */
+p {  
   color:#575757;
 }
 /*--------------------------------------------------------------
@@ -122,8 +112,7 @@ p {
 
 #header.header-scrolled {
   background: rgba(55, 64, 85, 0.9);
-  /* padding: 15px 0; */
-}
+ }
 #header .logo {
   font-size: 28px;
   margin: 0;
@@ -395,7 +384,6 @@ p {
   }
 }
 
-
 #hero .container {
   text-align: center;
   padding-top: 30px;
@@ -495,21 +483,18 @@ p {
 }
 
 /*--------------------------------------------------------------
-# Sections General
+# Section General
 --------------------------------------------------------------*/
 section {
   padding: 60px 0;
 }
-
 .section-bg {
   background-color: #f7f8fa;
 }
-
 .section-title {
   text-align: center;
   padding-bottom: 30px;
 }
-
 .section-title h2 {
   font-weight: 700;
   font-size: 34px;
@@ -519,7 +504,6 @@ section {
   padding-bottom: 20px;
   position: relative;
 }
-
 .section-title h2::after {
   content: "";
   position: absolute;
@@ -530,11 +514,8 @@ section {
   bottom: 0;
   left: calc(50% - 25px);
 }
-
 .section-title p {
-  margin-bottom: 0;
-  /* font-size: 18px;
-  color: #575757;; */
+  margin-bottom: 0; 
 }
 
 /*--------------------------------------------------------------
@@ -606,12 +587,9 @@ section {
   padding: 15px 0;
   text-align: center;
 }
-
 .clients img {
-  /* max-width: 45%; */
   transition: all 0.4s ease-in-out;
   display: inline-block;
-  /* padding: 10px ; */
   filter: grayscale(100);
 }
 
@@ -657,7 +635,6 @@ section {
 section#hero2 {
   padding: 0;
 }
-
 #header.header-carrito {
   background: transparent;
   /* background: rgba(55, 64, 85, 0.9); */
@@ -669,11 +646,9 @@ section#hero2 {
  #hero2 {
   padding-top: 70px;
 } 
-
 section#carrito-vinos {
   padding: 30px 0;
 }
-
 .bg-secondary { 
   background-color: #780A2F!important;
 }
@@ -729,11 +704,9 @@ select#ordenar-precios {
   display: flex;
   align-items: center;
 }
-
 .btn-comprar i {
   margin-right: 8px;
 }
-
 #vinos a.btn-comprar {
   background: #701030; 
   border: 0;
@@ -743,11 +716,9 @@ select#ordenar-precios {
   border-radius: 50px;
   margin: 10px;
 }
-
 #vinos a.btn-comprar:hover {
   background: #BB0F4B;
 }
-
 #vinos a.btn-agregar  {
   background: #BB0F4B;  
   border: 0;
@@ -756,11 +727,9 @@ select#ordenar-precios {
   transition: 0.4s;
   border-radius: 50px;
 }
-
 #vinos a.btn-agregar.agregar:hover {
   background: #701030;
 }
-
 
 /* dentro de carrito.html */
 .contenedor-principal {
@@ -807,19 +776,13 @@ button.btn.btn-danger.btn-sm {
 }
 
 .resumen-compra {
-  height: 300px; /* Altura fija que puedes ajustar según tus necesidades */
+  height: 300px; 
   position: sticky;
   top: 0;
-  background-color: #f8f9fa; /* Fondo para diferenciar visualmente */
+  background-color: #f8f9fa; 
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra opcional para un mejor diseño */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
 }
-
-  
-
-
-
-
 
 /*--------------------------------------------------------------
 # Contact
